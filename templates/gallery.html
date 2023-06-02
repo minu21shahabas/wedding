@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    div.gallery {
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #1a1919;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+</style>
+<body>
+    <div>
+        
+        <section class="wow animate__fadeIn parallax" data-parallax-background-ratio="0.5" style=" background-image:url('https://image.shutterstock.com/image-photo/creative-layout-made-flowers-leaves-260nw-1589292727.jpg');
+  
+         background-position: 0% 0px; visibility: visible; animation-name: fadeIn;">
+  <nav class="navbar navbar-expand-sm">
+      <div>
+        <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybInveyPFzYziYpyAy45Hyi3OjJhUySYoBg&usqp=CAU" style="width: 50%; height: 50%; border-radius: 50%;" class="rounded">
+      </div>
+    
+      <ul class="navbar-nav ml-auto" style="margin-right: 10%; margin-bottom:20px;">
+          <li class="nav-item" style="color: whitesmoke;">
+              <a class="nav-link" href="{% url 'homepage' %}"style="margin-right: 50px;">
+               HOME
+              </a>
+          </li>
+          <li class="nav-item" style="margin-right: 50px;">
+            <a class="nav-link" href="{% url 'about' %}">
+              ABOUT
+            </a>
+        </li>
+          <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="">
+                GALLERY
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href=""  data-toggle="modal" data-target="#exampleModalCenter" style="margin-right: 50px;">
+                BOOKINGS
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'con' %}" style="margin-right: 50px;">
+              CONTACT
+            </a>
+        </li>
+      </ul>
+  </nav>
+  
+  
+  
+              <div class="bg-extra-dark-gray"></div>
+  
+              <div class="container position-relative">
+  
+                  <div class="row align-items-center">
+  
+                      <div class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large">
+  
+                          <h1 class="text-white-2 alt-font font-weight-300 letter-spacing-minus-1 margin-10px-bottom" style="color: antiquewhite; margin-bottom: 10px; font-size: xx-large;"><b>Kerala Wedding Shoot</b></h1>
+  <span class="text-white-2 opacity6" style="color: antiquewhite; margin-bottom: 15px;">Wedding Photography & Cinematography. We love what we do and we do it with love...</span>
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </section>
+          <div>
+            <p style="margin-top: 50px; text-align: justify; padding-left: 20px; padding-right: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Kerala is a land of unparalleled beauty, and its weddings are just as stunning. A photographic studio in Kerala with a focus on wedding photography is called Crystalline Studio. Crystalline Studio is excited to share these Kerala wedding photoshoots with you! Kerala is a state in India known for its beautiful landscape and rich culture, so the couples wanted to make sure that their wedding photoshoot captured the essence of their homeland. The Crystalline photographers did an amazing job of capturing the spirit of the day and the love between the couple. We had the privilege of photographing a Kerala wedding and it was an incredible experience. The Crystalline brides and grooms were so in love, and their happiness was contagious. The wedding was filled with beautiful traditions, and the Kerala Wedding photoshoot we captured reflects the joy and love of the day.
+
+                For talented photographers and designers worldwide, Kerala Wedding Photoshoot by Crystalline Studio presents a sizable opportunity. It takes a lot of effort, consideration, and attention to detail to design an album. The purpose of the Kerala wedding photoshoot process is to bring together your thoughts and our imaginative vision of your wedding day in a cooperative effort to produce a lovely memory. Similar to wedding videos, wedding video editors must have a lot of imagination to realize their vision. Do you want to participate in a Kerala Couple Photoshoot? Crystalline offers the best Wedding Photography Kerala, and we use this famous form of art to make your ideal wedding day an eternal memory.</p>
+          </div>
+          <div style="margin-top: 50px;">
+            <h1 style="text-align: center;">Wedding Photography Gallery</h1>
+          </div>
+          <div class="gallery" style="margin-left: 20px;">
+              <img src="https://vivekkrishnan.com/wp-content/uploads/2017/05/vivekkrishnanphotography-60-1.jpg" alt="Cinque Terre" width="1000" height="1000">
+          </div>
+          
+          <div class="gallery">
+              <img src="data:image/jpeg;base64,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" alt="Forest" width="1000" height="1500">
+          </div>
+          
+          <div class="gallery">
+              <img src="https://haipappa.com/wp-content/uploads/2019/05/2-2-682x1024.jpg" alt="Northern Lights" width="1000" height="1000">
+           
+          </div>
+          
+          <div class="gallery">
+              <img src="https://setmywed.com/blog/wp-content/uploads/2022/01/59301631539610.jpg" alt="Mountains" width="1000" height="1000">
+                      </div>
+            <div class="gallery">
+                        <img src="https://silkphotos.com/wp-content/uploads/2014/12/Muslim-wedding-photographer_01-3.jpg" alt="Northern Lights" width="1000" height="1000">
+                     
+                    </div>
+                    
+                    <div class="gallery">
+                        <img src="https://crystallinestudio.com/image_gallery_big/Crystalline-photography-972.jpg" alt="Mountains" width="1000" height="1000">
+                                </div>
+                                <div class="gallery">
+                                    <img src="https://tjweddingfilms.com/wp-content/uploads/2021/02/Kerala-Christian-Bridal-Photography14-scaled.jpg" alt="Mountains" width="1000" height="1000">
+                                            </div><br><br>
+        <div style="margin-top: 100px;">
+            <button type="button" class="btn btn-outline-dark">More..</button>
+        </div>
+
+    <div style="margin-top: 50px;">
+        <h1 style="text-align: center;">Birthday Photography Gallery</h1>
+    </div> 
+    <div class="gallery" style="margin-left: 20px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQze-G9SVy-J77_vTq6wXec-W6aTbKyt3H8vA&usqp=CAU" alt="Cinque Terre" width="1000" height="1000">
+    </div>
+    
+    <div class="gallery">
+        <img src="https://crystallinestudio.com/image_gallery/thumbs/Crystalline-photography-2694.jpg" alt="Forest" width="1000" height="1500">
+    </div>
+    
+    <div class="gallery">
+        <img src="https://images.squarespace-cdn.com/content/v1/5ccecedd67713500010d87c3/1625647954227-TE4ABBE4N6O7J9RAAA9Q/20ance.jpg" alt="Northern Lights" width="1000" height="1000">
+     
+    </div>
+    
+    <div class="gallery">
+        <img src="https://images.squarespace-cdn.com/content/v1/5ccecedd67713500010d87c3/1625647967970-RK9K35IAQF1O2DSGREY0/11ance.jpg" alt="Mountains" width="1000" height="1000">
+                </div>
+      <div class="gallery">
+                  <img src="https://www.dazzlingdivaphotography.com/wp-content/uploads/2021/05/first-birthday-ideas-dazzling-diva-photography_0041-scaled.jpg" alt="Northern Lights" width="1000" height="1000">
+               
+              </div>
+              
+              <div class="gallery">
+                  <img src="https://www.dazzlingdivaphotography.com/wp-content/uploads/2021/05/first-birthday-ideas-dazzling-diva-photography_0043-scaled.jpg" alt="Mountains" width="1000" height="1000">
+                          </div>
+                          <div class="gallery">
+                              <img src="https://www.dazzlingdivaphotography.com/wp-content/uploads/2021/05/first-birthday-ideas-dazzling-diva-photography_0058-scaled.jpg" alt="Mountains" width="1000" height="1000">
+                                      </div><br><br>  
+                                      <div style="margin-top: 100px;">
+                                        <button type="button" class="btn btn-outline-dark">More..</button>
+                                    </div>
+                                    <div style="margin-top: 50px;">
+                                        <h1 style="text-align: center;">Save the Date Photography Gallery</h1>
+                                    </div> 
+                                    <div class="gallery" style="margin-left: 20px;">
+                                        <img src="https://i.pinimg.com/736x/39/0a/72/390a7257130dc20813d6e0c1c579ef45.jpg" alt="Cinque Terre" width="1000" height="1000">
+                                    </div>
+                                    
+                                    <div class="gallery">
+                                        <img src="https://crystallinestudio.com/image_gallery_big/Crystalline-photography-4279.jpg" alt="Forest" width="1000" height="1500">
+                                    </div>
+                                    
+                                    <div class="gallery">
+                                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/BK/BN/YL/107451831/save-the-date-photography-in-kannur-wayanad-calicut-1000x1000.jpg" alt="Northern Lights" width="1000" height="1000">
+                                     
+                                    </div>
+                                    
+                                    <div class="gallery">
+                                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/QE/QU/IH/107451831/save-the-date-photography-in-kannur-wayanad-calicut-1000x1000.jpg" alt="Mountains" width="1000" height="1000">
+                                                </div>
+                                      <div class="gallery">
+                                                  <img src="https://pbs.twimg.com/media/EyWSkMoWUAAR-rZ.jpg" alt="Northern Lights" width="1000" height="1000">
+                                               
+                                              </div>
+                                              
+                                              <div class="gallery">
+                                                  <img src="https://i.pinimg.com/originals/52/36/7d/52367d38a7d9c310faf04569f131b112.jpg" alt="Mountains" width="1000" height="1000">
+                                                          </div>
+                                                          <div class="gallery">
+                                                              <img src="https://i.pinimg.com/originals/40/32/48/403248f4745a9623f703d76dd5d3b516.jpg" alt="Mountains" width="1000" height="1000">
+                                                                      </div><br><br>  
+                                                                      <div style="margin-top: 100px;">
+                                                                        <button type="button" class="btn btn-outline-dark">More..</button>
+                                                                    </div>
+                                                                    
+                                                                    <div class="footer-middle" style="background-color: black; margin-top: 50px;"> 
+                                                                        <div class="container">
+                                                                          <div class="row">
+                                                                                                                                  <div class="col-sm-12 col-md-6 col-lg-3 ">
+                                                                                  <div id="about_us-widget-9" class="widget about_us">			<!-- About Widget -->
+                                                                      <div class="about-footer">
+                                                                      <div class="footer-widget address">
+                                                                        <div class="footer-logo">
+                                                                                                      </div>
+                                                                        <div class="footer-address">
+                                                                                                                  </div>
+                                                                      </div>
+                                                                      </div>	
+                                                                      
+                                                                      </div><div id="about_us-widget-5" class="widget about_us">			<!-- About Widget -->
+                                                                      <div class="about-footer">
+                                                                      <div class="footer-widget address">
+                                                                        <div class="footer-logo">
+                                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybInveyPFzYziYpyAy45Hyi3OjJhUySYoBg&usqp=CAU"  alt="" style="padding-top: 30px; width: 100px; height: 100px; margin-right: 60%;">    
+                                                                             <br><p style="color: beige;">KNA PLAZA, Kundannoor<br>
+                                                                              Kochi, Kerala 682304</p> 
+                                                                              <div class="text-m-small line-height-24 text-medium-gray"> <a href="" class="text-medium-gray">weddingphotography@gmail.com</a></div>
+                                                                      
+                                                                                                  <div class="text-m-small line-height-24 text-medium-gray" style="color: antiquewhite;">Phone: +91 999 546 9222  </div>
+                                                                      
+                                                                                                  <div class="text-m-small line-height-24 text-medium-gray" style="color: antiquewhite;">Phone: +91 996 199 8444 </div>             
+                                                                            
+                                                                                      </div>
+                                                                                      <div class="col-lg-3 footer-sm col-md-4 col-sm-6 widget margin-30px-top">
+                                                                                                      
+                                                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15719.85030919971!2d76.3183881!3d9.9370718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa84056d3a732a1ae!2sCrystalline%20Photography!5e0!3m2!1sen!2sin!4v1664373217895!5m2!1sen!2sin" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                                    </div>
+                                                                      
+                                                                      </div>
+                                                                      </div>	
+                                                                      
+                                                                      </div><div id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-social-menu-container"><ul id="menu-social-menu" class="menu">
+                                                                      </ul></div></div>										</div>
+                                                                                
+                                                                                                                                    <div class="col-sm-12 col-md-6 col-lg-3 ">
+                                                                                  <div id="nav_menu-2" class="widget widget_nav_menu"><h2 class="widget-title">Quick Links</h2><div class="menu-our-company-container"><ul id="menu-our-company" class="menu"><li id="menu-item-423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-423"><a href="#"  style="color: whitesmoke;">Home</a></li>
+                                                                      <li id="menu-item-424" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-424"><a href="#" style="color: whitesmoke;">Contact</a></li>
+                                                                      <li id="menu-item-425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-425"><a href="#"  style="color: whitesmoke;">Gallery</a></li>
+                                                                      <li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-426"><a href="#"  style="color: whitesmoke;">Bookings</a></li>
+                                                                      <li id="menu-item-427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-427"><a href="#"  style="color: whitesmoke;">Explore</a></li>
+                                                                      </ul></div></div>										</div>
+                                                                                
+                                                                                                                                    <div class="col-sm-12 col-md-6 col-lg-3 ">
+                                                                                  <div id="about_us-widget-3" class="widget about_us"><h2 class="widget-title">Our Services</h2>
+                                                                                    <ul class="list-unstyled" >
+                                                                                                        
+                                                                                      <li style="color: antiquewhite;"><a class="text-medium" href=""  style="line-height:36px; color: antiquewhite;">Christian Wedding Photography</a></li>
+                                                                                        
+                                                                                      <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Hindu Wedding Photography</a></li>
+                                                                                        
+                                                                                      <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Muslim Wedding Photography</a></li>
+                                                                                        
+                                                                                      <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Save the Date Photography</a></li>
+                                                                                        
+                                                                                      <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Baptism Photography</a></li>
+                                                                                        
+                                                                                      <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Holy Communion Photography</a></li>
+                                                                                        
+                                                                                      <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Haldi Photography</a></li>
+                                                                                        
+                                                                                      <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Birthday Photography</a></li>
+                                                                                        </ul>
+                                                                                       <ul class="list-unstyled">
+                                                                                  <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;">Drone or Helicam</a></li>
+                                                                                  <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;">Live Streaming for Wedding</a></li>
+                                                                                  <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;"> Wedding Video Editing</a></li>
+                                                                                  <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;"> Wedding Album Designing</a></li>
+                                                                      
+                                                                      
+                                                                                  </ul>	
+                                                                                          <!-- About Widget -->
+                                                                      <div class="about-footer">
+                                                                      <div class="footer-widget address">
+                                                                        <div class="footer-logo">
+                                                                                            
+                                                                                      </div>
+                                                                                      
+                                                                        <div class="footer-address">
+                                                                                        <div class="footer_s_inner"> 
+                                                                            <div class="footer-sociala-icon">
+                                                                              <i class="fa fa-home"></i>
+                                                                            </div>									
+                                                                            <div class="footer-sociala-info">				
+                                                                            </div> 
+                                                                          </div> 
+                                                                                                      <div class="footer_s_inner"> 
+                                                                            <div class="footer-sociala-icon">
+                                                                              <i class="fa fa-phone"></i>
+                                                                            </div> 									
+                                                                            
+                                                                          </div>
+                                                                                                    
+                                                                            <div class="footer_s_inner"> 
+                                                                              <div class="footer-sociala-icon"> 
+                                                                                <i class="fa fa-globe"></i>
+                                                                              </div> 
+                                                                              <div class="footer-sociala-info">  
+                                                                              </div>
+                                                                            </div>
+                                                                                      </div>
+                                                                      </div>
+                                                                      </div>	
+                                                                      
+                                                                      </div>										</div>
+                                                                                
+                                                                                                                                    <div class="col-sm-12 col-md-6 col-lg-3 last">
+                                                                                  <div id="about_us-widget-6" class="widget about_us">		<!-- About Widget -->
+                                                                      <div class="about-footer">
+                                                                      <div class="footer-widget address">
+                                                                        <div class="footer-logo">
+                                                                                            
+                                                                                      </div>
+                                                                        <div class="footer-address">
+                                                                                                                  </div>
+                                                                      </div>
+                                                                      </div>	  
+                                                                      
+                                                                      
+
+
+                                                                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-image: url('https://wevaphotography.com/wp-content/uploads/2021/12/amazing-pre-wedding-pictures-..jpg');">
+                                                                        <div class="modal-dialog modal-dialog-centered" role="document" style="width: 100%;">
+                                                                          <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                              <h5 class="modal-title" style="text-align: center; margin-left: 25%; font-size: larger;color: rgb(17, 17, 17);" id="exampleModalLongTitle"><b>YOUR BOOKINGS..</b></h5>
+                                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                              </button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                             <form>
+                                                                              <label>Name</label>
+                                                                              <input type="text" placeholder="your name" class="form-control">
+                                                                              <label>Partner Name</label>
+                                                                              <input type="text" placeholder="your partner name" class="form-control">
+                                                                              <label>Address</label>
+                                                                              <textarea placeholder="enter address" rows="4" cols="50" class="form-control"></textarea>
+                                                                              <label>Function Date</label>
+                                                                              <input type="date" class="form-control"> 
+                                                                              <label>Function</label>
+                                                                              <select class="form-control">
+                                                                                <option>Marriage</option>
+                                                                                <option>Save the date</option>
+                                                                                <option>Reception</option>
+                                                                                <option>Birthday</option>
+                                                                                <option>Other</option>
+                                                                              </select><br><br>
+                                                                              <button type="submit" class="btn btn-success">Book Now</button>
+                                                                      
+                                                                          </div>
+                                                                          <div class="modal-footer">
+                                                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                            </div>
+                                                                             </form>
+                                                                            </div>
+                                                                            
+                                                                      
+                                                                      
+                                                                      </div>
+                                                                      </div>
+                                                                      </div>
+</body>
+</html>

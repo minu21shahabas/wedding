@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+        <section class="wow animate__fadeIn parallax" data-parallax-background-ratio="0.5" style=" background-image:url('https://cdn.hasselblad.com/f/77891/3840x1600/2cf4652af4/x2d_lightweight_field_kit_banner_1920x800_-2x_pc.jpg');
+  
+         background-position: 0% 0px; visibility: visible; animation-name: fadeIn;">
+  <nav class="navbar navbar-expand-sm">
+      <div>
+        <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybInveyPFzYziYpyAy45Hyi3OjJhUySYoBg&usqp=CAU" style="width: 50%; height: 50%; border-radius: 50%;" class="rounded">
+      </div>
+    
+      <ul class="navbar-nav ml-auto" style="margin-right: 10%; margin-bottom:20px;">
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'homepage' %}"style="margin-right: 50px;">
+               HOME
+              </a>
+          </li>
+          <li class="nav-item" style="margin-right: 50px;">
+            <a class="nav-link" href="{% url 'about' %}">
+              ABOUT
+            </a>
+        </li>
+          <li class="nav-item" style="margin-right: 50px;">
+                <a class="nav-link" href="{% url 'gallery' %}">
+
+                GALLERY
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href=""  data-toggle="modal" data-target="#exampleModalCenter" style="margin-right: 50px;">
+                BOOKINGS
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" style="margin-right: 50px;">
+              CONTACT
+            </a>
+        </li>
+      </ul>
+  </nav>
+  
+  
+  
+              <div class="bg-extra-dark-gray"></div>
+  
+              <div class="container position-relative">
+  
+                  <div class="row align-items-center">
+  
+                      <div class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large">
+  
+                          <h1 class="text-white-2 alt-font font-weight-300 letter-spacing-minus-1 margin-10px-bottom" style="color: antiquewhite; margin-bottom: 10px;"><b>Contact Us</b></h1>
+  <span class="text-white-2 opacity6" style="color: antiquewhite; margin-bottom: 15px;">Wedding Photography & Cinematography. We love what we do and we do it with love...</span>
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </section>
+          <div style="margin-top: 50px;">
+            <p style="text-align: justify;font-size: larger; font-family: 'Times New Roman', Times, serif;margin-left: 20px; margin-right: 20px;">Making a connection with you is our top priority, as this ensures you are comfortable on your special day .capturing ,editing and creating wedding stories is what we love to do. Our cinematography & videography offers the perfect balance of tradition, personality, & innovation to capture a beautiful story of your wedding day. This is more than creating emotional & cinematic films... This is about passion.We would love to visit with you by phone or in person and talk about your wedding, event, or video project. You can also reach out to us through the Contact Page.Not sure what package is best for your day? No problem - Get in touch with Wedding Photography Kerala.</p>
+          </div>
+          <div class="card-deck" style="width: 70%; height: 50%; margin-left: 200px; margin-top: 70px;;">
+            <div class="card" >
+              <img class="rounded-circle" src="data:image/png;base64,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" alt="Card image cap"  width="140" height="140" style="padding-top: 10px;">
+              <div class="card-body">
+                <h3 class="card-title">Head Office</h3>
+                <p class="card-text" style="text-align: justify;">Wedding Photography</p>
+                <p>KNA PLAZA, Kundannoor</p>
+                <p>Kochi, Kerala 682304</p>
+          
+            </div>
+            </div>
+            <div class="card" >
+                <img class="rounded-circle" src="data:image/png;base64,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" alt="Card image cap"  width="140" height="140" style="padding-top: 10px;">
+                <div class="card-body">
+                  <h3 class="card-title">Branch Office</h3>
+                  <p class="card-text" style="text-align: justify;">Wedding Photography</p>
+                  <p>Kallarackal Building</p>
+                  <p>Vaikom, Kottayam-686608</p>
+            
+              </div>
+              </div>
+              <div class="card" >
+                <img class="rounded-circle" src="https://static.vecteezy.com/system/resources/thumbnails/016/895/354/small_2x/chatting-line-icon-isolated-on-white-background-black-flat-thin-icon-on-modern-outline-style-linear-symbol-and-editable-stroke-simple-and-pixel-perfect-stroke-illustration-vector.jpg" alt="Card image cap"  width="140" height="140">
+                <div class="card-body">
+                  <h3 class="card-title">Let's Talk</h3>
+                  <p class="card-text" style="text-align: justify;">Wedding Photography</p>
+                  <p>Phone: +91 999 546 9654</p>
+                  <p>Phone: +91 999 456 9654</p>
+            
+              </div>
+              </div>
+              <div class="card" >
+                <img class="rounded-circle" src="https://thumbs.dreamstime.com/b/email-icon-outline-isolated-white-background-vector-illustration-eps-125272630.jpg" alt="Card image cap"  width="140" height="140">
+                <div class="card-body">
+                  <h3 class="card-title">Email Us</h3>
+                  <p class="card-text" style="text-align: justify;">Wedding Photography</p>
+                  <p>weddingphotography@gmail.com</p>
+            
+              </div>
+              </div>
+          </div>
+
+
+          <div class="footer-middle" style="background-color: black; margin-top: 50px;"> 
+            <div class="container">
+              <div class="row">
+                                                                      <div class="col-sm-12 col-md-6 col-lg-3 ">
+                      <div id="about_us-widget-9" class="widget about_us">			<!-- About Widget -->
+          <div class="about-footer">
+          <div class="footer-widget address">
+            <div class="footer-logo">
+                                          </div>
+            <div class="footer-address">
+                                                      </div>
+          </div>
+          </div>	
+          
+          </div><div id="about_us-widget-5" class="widget about_us">			<!-- About Widget -->
+          <div class="about-footer">
+          <div class="footer-widget address">
+            <div class="footer-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybInveyPFzYziYpyAy45Hyi3OjJhUySYoBg&usqp=CAU"  alt="" style="padding-top: 30px; width: 100px; height: 100px; margin-right: 60%;">    
+                 <br><p style="color: beige;">KNA PLAZA, Kundannoor<br>
+                  Kochi, Kerala 682304</p> 
+                  <div class="text-m-small line-height-24 text-medium-gray"> <a href="" class="text-medium-gray">weddingphotography@gmail.com</a></div>
+          
+                                      <div class="text-m-small line-height-24 text-medium-gray" style="color: antiquewhite;">Phone: +91 999 546 9222  </div>
+          
+                                      <div class="text-m-small line-height-24 text-medium-gray" style="color: antiquewhite;">Phone: +91 996 199 8444 </div>             
+                
+                          </div>
+                          <div class="col-lg-3 footer-sm col-md-4 col-sm-6 widget margin-30px-top">
+                                          
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15719.85030919971!2d76.3183881!3d9.9370718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa84056d3a732a1ae!2sCrystalline%20Photography!5e0!3m2!1sen!2sin!4v1664373217895!5m2!1sen!2sin" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+          
+          </div>
+          </div>	
+          
+          </div><div id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-social-menu-container"><ul id="menu-social-menu" class="menu">
+          </ul></div></div>										</div>
+                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-3 ">
+                      <div id="nav_menu-2" class="widget widget_nav_menu"><h2 class="widget-title">Quick Links</h2><div class="menu-our-company-container"><ul id="menu-our-company" class="menu"><li id="menu-item-423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-423"><a href="#"  style="color: whitesmoke;">Home</a></li>
+          <li id="menu-item-424" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-424"><a href="#" style="color: whitesmoke;">Contact</a></li>
+          <li id="menu-item-425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-425"><a href="#"  style="color: whitesmoke;">Gallery</a></li>
+          <li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-426"><a href="#"  style="color: whitesmoke;">Bookings</a></li>
+          <li id="menu-item-427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-427"><a href="#"  style="color: whitesmoke;">Explore</a></li>
+          </ul></div></div>										</div>
+                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-3 ">
+                      <div id="about_us-widget-3" class="widget about_us"><h2 class="widget-title">Our Services</h2>
+                        <ul class="list-unstyled" >
+                                            
+                          <li style="color: antiquewhite;"><a class="text-medium" href=""  style="line-height:36px; color: antiquewhite;">Christian Wedding Photography</a></li>
+                            
+                          <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Hindu Wedding Photography</a></li>
+                            
+                          <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Muslim Wedding Photography</a></li>
+                            
+                          <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Save the Date Photography</a></li>
+                            
+                          <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Baptism Photography</a></li>
+                            
+                          <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Holy Communion Photography</a></li>
+                            
+                          <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Haldi Photography</a></li>
+                            
+                          <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Birthday Photography</a></li>
+                            </ul>
+                           <ul class="list-unstyled">
+                      <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;">Drone or Helicam</a></li>
+                      <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;">Live Streaming for Wedding</a></li>
+                      <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;"> Wedding Video Editing</a></li>
+                      <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;"> Wedding Album Designing</a></li>
+          
+          
+                      </ul>	
+                              <!-- About Widget -->
+          <div class="about-footer">
+          <div class="footer-widget address">
+            <div class="footer-logo">
+                                
+                          </div>
+                          
+            <div class="footer-address">
+                            <div class="footer_s_inner"> 
+                <div class="footer-sociala-icon">
+                  <i class="fa fa-home"></i>
+                </div>									
+                <div class="footer-sociala-info">				
+                </div> 
+              </div> 
+                                          <div class="footer_s_inner"> 
+                <div class="footer-sociala-icon">
+                  <i class="fa fa-phone"></i>
+                </div> 									
+                
+              </div>
+                                        
+                <div class="footer_s_inner"> 
+                  <div class="footer-sociala-icon"> 
+                    <i class="fa fa-globe"></i>
+                  </div> 
+                  <div class="footer-sociala-info">  
+                  </div>
+                </div>
+                          </div>
+          </div>
+          </div>	
+          
+          </div>										</div>
+                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-3 last">
+                      <div id="about_us-widget-6" class="widget about_us">		<!-- About Widget -->
+          <div class="about-footer">
+          <div class="footer-widget address">
+            <div class="footer-logo">
+                                
+                          </div>
+            <div class="footer-address">
+                                                      </div>
+          </div>
+          </div>	
+
+
+
+
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-image: url('https://wevaphotography.com/wp-content/uploads/2021/12/amazing-pre-wedding-pictures-..jpg');">
+            <div class="modal-dialog modal-dialog-centered" role="document" style="width: 100%;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" style="text-align: center; margin-left: 25%; font-size: larger;color: rgb(17, 17, 17);" id="exampleModalLongTitle"><b>YOUR BOOKINGS..</b></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                 <form>
+                  <label>Name</label>
+                  <input type="text" placeholder="your name" class="form-control">
+                  <label>Partner Name</label>
+                  <input type="text" placeholder="your partner name" class="form-control">
+                  <label>Address</label>
+                  <textarea placeholder="enter address" rows="4" cols="50" class="form-control"></textarea>
+                  <label>Function Date</label>
+                  <input type="date" class="form-control"> 
+                  <label>Function</label>
+                  <select class="form-control">
+                    <option>Marriage</option>
+                    <option>Save the date</option>
+                    <option>Reception</option>
+                    <option>Birthday</option>
+                    <option>Other</option>
+                  </select><br><br>
+                  <button type="submit" class="btn btn-success">Book Now</button>
+          
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                 </form>
+                </div>
+                
+          
+          
+          </div>
+          </div>
+          </div>
+                 
+</body>
+</html>

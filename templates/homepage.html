@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+  li a {
+  
+  color: rgb(17, 17, 17);
+  font-size: larger;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+<body>
+    <div>
+      <nav class="navbar navbar-expand-sm">
+        <div>
+          <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybInveyPFzYziYpyAy45Hyi3OjJhUySYoBg&usqp=CAU" style="width: 50%; height: 50%; border-radius: 50%;" class="rounded">
+        </div>
+      
+        <ul class="navbar-nav ml-auto" style="margin-right: 10%; margin-bottom:20px;">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'homepage' %}"style="margin-right: 50px;">
+                 HOME
+                </a>
+            </li>
+            <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="{% url 'about' %}">
+                ABOUT
+              </a>
+          </li>
+            <li class="nav-item" style="margin-right: 50px;">
+                <a class="nav-link" href="{% url 'gallery' %}">
+                  GALLERY
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=""  data-toggle="modal" data-target="#exampleModalCenter" style="margin-right: 50px;">
+                  BOOKINGS
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'con' %}" style="margin-right: 50px;">
+                CONTACT
+              </a>
+          </li>
+        </ul>
+    </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://tjweddingfilms.com/wp-content/uploads/2021/02/04-1024x536.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block" style="margin-bottom: 20%;">
+                    <h4>Muslim Wedding Photography in Kerala</h4>
+                    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enduring Unions</h1>    
+                  </div>
+                </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.focuzstudios.in/wp-content/uploads/2017/11/udupi-brahmins-wedding-photography-kerala-29.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block" style="margin-bottom: 20%;">
+                  <h4>Hindu Wedding Photography in Kerala</h4>
+                  <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Bridal Chronicles</h1>    
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://cdn0.weddingwire.in/article/7411/3_2/960/jpg/91147-kerala-christian-wedding-ceremony-gautam-khullar-happily-married.jpeg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block" style="margin-bottom: 20%;">
+                  <h4>Christain Wedding Photography in Kerala</h4>
+                  <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Extravagant & Sterling</h1>    
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://i.ytimg.com/vi/kc0r1epYnHE/maxresdefault.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block" style="margin-bottom: 20%;">
+                  <h4>Save the Date  Photography in Kerala</h4>
+                  <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Uniquely Exotic</h1>    
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+         
+    </div><br><br><br>
+    <div>
+      <h1 style="text-align: center;">WEDDING PHOTOGRAPHY IN KERALA</h1><br><br><br>
+      <h2 class="text-extra-dark-gray margin-50px-bottom md-margin-20px-bottom alt-font text-center"><i class="fas fa-quote-left text-deep-dark-gray icon-large margin-15px-bottom"></i> 
+
+        Capturing moments is easy but aptly capturing the essence of the moment and the plethora of emotions it possesses is what sets Crystalline studio Photography & Films apart</h2><br><br>
+
+        <p class="text-center" style="text-align: justify;">
+
+We are seekers of the true essence of marvelous wedding celebrations. While we believe that
+bringing the essence of every emotional moment and whimsically romantic moment that you will
+treasure forever is our top priority. Our goal is to capture your most pleasant and heartfelt moments
+throughout your wedding. We are unafraid to go the additional mile when it comes to customer
+fulfillment, providing customized and distinctive services that preserve each of your treasured
+memories forever. Crystalline Studio, <b>Wedding Photography Kerala</b> with the finest Wedding Photographers, you can rely on us to provide highquality wedding photography; candid wedding photography; we like capturing beautiful details
+that will last a lifetime. Reach out to us with your ideas for your big day, and we’ll work with you
+to create a lasting memory of the day of your dreams. We are a dedicated group of
+<b>best photographers in Kerala</b> and candid cinematographers that like capturing and preserving the most beautiful
+sentiments.<br><br>
+
+<b>Wedding Photography Kerala</b> by Crystalline Studio is has the Kerala's top wedding and pre-wedding photographers. Weddings are about
+cherishing the most important moments, customs and rituals, and establishing new bonds. Our goal
+is to create the most incredible experiences that you will remember for the rest of your life. Our
+specialization is candid wedding photography, pre wedding photography, wedding videography,
+and post wedding shoot. We go beyond our limits to get the best angle shots. We believe it is the
+art beyond the technicalities. Crystalline studio owns the Best Wedding Photography In Kochi with <b>best photographers in kerala</b> <br><br>
+
+Our crew, which is made up of enthusiastic, hardworking, and skilled photographers and
+cinematographers that aim to create lasting memories for couples and their families, is
+continuously honing their talents via internal seminars, proper research, and meticulous
+preparation. We <b>Wedding Photography Kerala</b> Crystalline team portray your life in captivating frames by collecting each important moment and
+expressing it with an artistic touch.</p>
+
+    </div><br><br><br>
+    <div class="card-group mb-3">
+      <div class="card mr-3" >
+        <img class="card-img-top img-fluid" src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-43.jpg" alt="Card image cap" style="width: 500px; height: 450px;">
+        <div class="card-body">
+          <span class="line-height-normal font-weight-300 text-big alt-font margin-5px-bottom text-extra-dark-gray d-block">Wedding Photography In Kerala</span>
+                                                  <p class="text-medium-gray text-extra-small text-uppercase">Dr Sajin & Dr Lipsa</p>
+        </div>
+      </div>
+      <div class="card mr-3">
+        <img class="card-img-top img-fluid" src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-40.jpg" alt="Card image cap" style="width: 500px; height: 450px;">
+        <div class="card-body">
+          <span class="line-height-normal font-weight-300 text-big alt-font margin-5px-bottom text-extra-dark-gray d-block">Pentecostal Wedding Photography </span>
+                                                  <p class="text-medium-gray text-extra-small text-uppercase">Libin & Kezia</p>
+        </div>
+      </div>
+      <div class="card mr-3">
+        <img class="card-img-top img-fluid" src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-29.jpg" alt="Card image cap"style="width: 500px; height: 450px;">
+        <div class="card-body">
+          <span class="line-height-normal font-weight-300 text-big alt-font margin-5px-bottom text-extra-dark-gray d-block">Engagement Photography Kerala</span>
+                                                  <p class="text-medium-gray text-extra-small text-uppercase">Allen & Somi</p>
+        </div>
+      </div><br><br>
+      <div class="card-group mb-3">
+        <div class="card mr-3" >
+          <img class="card-img-top img-fluid" src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-25.jpg" alt="Card image cap" style="width: 500px; height: 450px;">
+          <div class="card-body">
+            <span class="line-height-normal font-weight-300 text-big alt-font margin-5px-bottom text-extra-dark-gray d-block">Wedding Photography In Kerala</span>
+                                                    <p class="text-medium-gray text-extra-small text-uppercase">Dr Sajin & Dr Lipsa</p>
+          </div>
+        </div>
+        <div class="card mr-3">
+          <img class="card-img-top img-fluid" src="https://www.guruvayurweddings.com/wp-content/uploads/2022/07/best-guruvayur-wedding-photography-ekta-jithin-moonwedlock-30.jpg" alt="Card image cap" style="width: 500px; height: 450px;">
+          <div class="card-body">
+            <span class="line-height-normal font-weight-300 text-big alt-font margin-5px-bottom text-extra-dark-gray d-block">Pentecostal Wedding Photography </span>
+                                                    <p class="text-medium-gray text-extra-small text-uppercase">Libin & Kezia</p>
+          </div>
+        </div>
+        <div class="card mr-3">
+          <img class="card-img-top img-fluid" src="https://cdn0.weddingwire.in/article/9265/3_2/960/jpg/35629-destination-wedding-in-kerala-wedding-bells-lead.jpeg" alt="Card image cap"style="width: 500px; height: 450px;">
+          <div class="card-body">
+            <span class="line-height-normal font-weight-300 text-big alt-font margin-5px-bottom text-extra-dark-gray d-block">Engagement Photography Kerala</span>
+                                                    <p class="text-medium-gray text-extra-small text-uppercase">Allen & Somi</p>
+          </div>
+        </div>
+      
+  </div><br><br><br><br>
+        <div >
+         
+            <h2 style="text-align: center;">EXPLORE.CREATE.INSPIRE </h2><br>
+            <p class="text-center" style="text-align: justify;">Crystalline Photography create a beautiful collection of photographs that perfectly capture the magic, emotion and spirit of their day. 
+            Your wedding day should be one of the most memorable days of your life. Crystalline want to make sure that this special day is one you'll remember for years to come.
+             The main goal of <b>Wedding Photography Kerala</b> is to create authentic photographs with a focus on capturing the emotions and the essence of your special day.</p>
+             
+             <p style="text-align: center;"><a href="" target="blank">Click here to Subscribe <i class="fab fa-youtube"></i></a></p>
+          
+        </div>
+    </div>
+</div><br><br>
+<section class="wow animate__fadeIn parallax" data-parallax-background-ratio="0.4" style="background-image:url('https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg');">
+
+  <div class="opacity-full bg-extra-dark-gray"></div>
+
+  <div class="container position-relative">
+
+      <div class="row align-items-center">
+
+         
+
+          <div class="col-12 col-lg-4 lg-margin-15px-top md-no-margin-top md-margin-ten-bottom sm-padding-five-lr sm-margin-ten-bottom wow animate__fadeIn last-paragraph-no-margin">
+
+              <div class="">
+
+                  <h2 class="alt-font text-white-2" style="color: white; text-align: left;" >Wedding Highlights in Kerala</h2>
+
+                  <p class="w-90 lg-w-100 mx-auto mx-lg-0 text-medium-gray" style="color: white;">Our wedding films are a visual delight. It transports you back to the time of the celebrations and brings back all 
+
+                  those emotions vividly. These are high production movie like films, beautifully summarizing all your rituals and festivities.Whether it be the exotic pre wedding couple shoot, 
+
+                  or an event from wedding days, our documentary stylewe candid Videography will certainly leave an impression.</p>
+
+                  <a href="https://crystallinestudio.com/about-crystalline-studio.html" class="margin-35px-top btn btn-small btn-white md-margin-30px-top">Find More</a>
+
+              </div>
+
+          </div>
+          <div class="col-12 col-lg-4 col-sm-6 position-relative text-center wow animate__fadeIn" data-wow-delay="0.4s" style="    margin-bottom: 35px;">
+            <a class="popup-youtube" href="https://www.youtube.com/watch?v=ovQgoWAEoRI">
+                <img src="https://img.youtube.com/vi/ovQgoWAEoRI/maxresdefault.jpg" alt="" class="w-100">
+                <p style="color: aliceblue;">Click here to watch</p>
+                </div>
+            </a>
+        </div>
+       
+    </div>
+</div>
+
+</section> <br><br><br><br>
+
+
+<div class="footer-middle" style="background-color: black;"> 
+  <div class="container">
+    <div class="row">
+                                                            <div class="col-sm-12 col-md-6 col-lg-3 ">
+            <div id="about_us-widget-9" class="widget about_us">			<!-- About Widget -->
+<div class="about-footer">
+<div class="footer-widget address">
+  <div class="footer-logo">
+                                </div>
+  <div class="footer-address">
+                                            </div>
+</div>
+</div>	
+
+</div><div id="about_us-widget-5" class="widget about_us">			<!-- About Widget -->
+<div class="about-footer">
+<div class="footer-widget address">
+  <div class="footer-logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybInveyPFzYziYpyAy45Hyi3OjJhUySYoBg&usqp=CAU"  alt="" style="padding-top: 30px; width: 100px; height: 100px; margin-right: 60%;">    
+       <br><p style="color: beige;">KNA PLAZA, Kundannoor<br>
+        Kochi, Kerala 682304</p> 
+        <div class="text-m-small line-height-24 text-medium-gray"> <a href="" class="text-medium-gray">weddingphotography@gmail.com</a></div>
+
+                            <div class="text-m-small line-height-24 text-medium-gray" style="color: antiquewhite;">Phone: +91 999 546 9222  </div>
+
+                            <div class="text-m-small line-height-24 text-medium-gray" style="color: antiquewhite;">Phone: +91 996 199 8444 </div>             
+      
+                </div>
+                <div class="col-lg-3 footer-sm col-md-4 col-sm-6 widget margin-30px-top">
+                                
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15719.85030919971!2d76.3183881!3d9.9370718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa84056d3a732a1ae!2sCrystalline%20Photography!5e0!3m2!1sen!2sin!4v1664373217895!5m2!1sen!2sin" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+</div>
+</div>	
+
+</div><div id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-social-menu-container"><ul id="menu-social-menu" class="menu">
+</ul></div></div>										</div>
+          
+                                                              <div class="col-sm-12 col-md-6 col-lg-3 ">
+            <div id="nav_menu-2" class="widget widget_nav_menu"><h2 class="widget-title">Quick Links</h2><div class="menu-our-company-container"><ul id="menu-our-company" class="menu"><li id="menu-item-423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-423"><a href="#"  style="color: whitesmoke;">Home</a></li>
+<li id="menu-item-424" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-424"><a href="#" style="color: whitesmoke;">Contact</a></li>
+<li id="menu-item-425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-425"><a href="#"  style="color: whitesmoke;">Gallery</a></li>
+<li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-426"><a href="#"  style="color: whitesmoke;">Bookings</a></li>
+<li id="menu-item-427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-427"><a href="#"  style="color: whitesmoke;">Explore</a></li>
+</ul></div></div>										</div>
+          
+                                                              <div class="col-sm-12 col-md-6 col-lg-3 ">
+            <div id="about_us-widget-3" class="widget about_us"><h2 class="widget-title">Our Services</h2>
+              <ul class="list-unstyled" >
+                                  
+                <li style="color: antiquewhite;"><a class="text-medium" href=""  style="line-height:36px; color: antiquewhite;">Christian Wedding Photography</a></li>
+                  
+                <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Hindu Wedding Photography</a></li>
+                  
+                <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Muslim Wedding Photography</a></li>
+                  
+                <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Save the Date Photography</a></li>
+                  
+                <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Baptism Photography</a></li>
+                  
+                <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Holy Communion Photography</a></li>
+                  
+                <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Haldi Photography</a></li>
+                  
+                <li><a class="text-medium" href=""  style="line-height:36px;color: antiquewhite;">Birthday Photography</a></li>
+                  </ul>
+                 <ul class="list-unstyled">
+            <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;">Drone or Helicam</a></li>
+            <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;">Live Streaming for Wedding</a></li>
+            <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;"> Wedding Video Editing</a></li>
+            <li><a  class="text-medium" href="" style="line-height:36px;color: antiquewhite;"> Wedding Album Designing</a></li>
+
+
+            </ul>	
+            		<!-- About Widget -->
+<div class="about-footer">
+<div class="footer-widget address">
+  <div class="footer-logo">
+                      
+                </div>
+                
+  <div class="footer-address">
+                  <div class="footer_s_inner"> 
+      <div class="footer-sociala-icon">
+        <i class="fa fa-home"></i>
+      </div>									
+      <div class="footer-sociala-info">				
+      </div> 
+    </div> 
+                                <div class="footer_s_inner"> 
+      <div class="footer-sociala-icon">
+        <i class="fa fa-phone"></i>
+      </div> 									
+      
+    </div>
+                              
+      <div class="footer_s_inner"> 
+        <div class="footer-sociala-icon"> 
+          <i class="fa fa-globe"></i>
+        </div> 
+        <div class="footer-sociala-info">  
+        </div>
+      </div>
+                </div>
+</div>
+</div>	
+
+</div>										</div>
+          
+                                                              <div class="col-sm-12 col-md-6 col-lg-3 last">
+            <div id="about_us-widget-6" class="widget about_us">		<!-- About Widget -->
+<div class="about-footer">
+<div class="footer-widget address">
+  <div class="footer-logo">
+                      
+                </div>
+  <div class="footer-address">
+                                            </div>
+</div>
+</div>	
+
+
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-image: url('https://wevaphotography.com/wp-content/uploads/2021/12/amazing-pre-wedding-pictures-..jpg');">
+  <div class="modal-dialog modal-dialog-centered" role="document" style="width: 100%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="text-align: center; margin-left: 25%; font-size: larger;color: rgb(17, 17, 17);" id="exampleModalLongTitle"><b>YOUR BOOKINGS..</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+        <label>Name</label>
+        <input type="text" placeholder="your name" class="form-control">
+        <label>Partner Name</label>
+        <input type="text" placeholder="your partner name" class="form-control">
+        <label>Address</label>
+        <textarea placeholder="enter address" rows="4" cols="50" class="form-control"></textarea>
+        <label>Function Date</label>
+        <input type="date" class="form-control"> 
+        <label>Function</label>
+        <select class="form-control">
+          <option>Marriage</option>
+          <option>Save the date</option>
+          <option>Reception</option>
+          <option>Birthday</option>
+          <option>Other</option>
+        </select><br><br>
+        <button type="submit" class="btn btn-success">Book Now</button>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+       </form>
+      </div>
+      
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
